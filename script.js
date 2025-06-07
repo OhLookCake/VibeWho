@@ -2,6 +2,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridElement = document.getElementById("grid");
     const loadingElement = document.getElementById("loading");
     const refreshButton = document.getElementById("refresh");
+    const helpBtn = document.getElementById("helpBtn");
+    const helpModal = document.getElementById("helpModal");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // Modal functionality
+    helpBtn.addEventListener("click", () => {
+        helpModal.classList.remove("hidden");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        helpModal.classList.add("hidden");
+    });
+
+    // Close modal when clicking outside
+    window.addEventListener("click", (event) => {
+        if (event.target === helpModal) {
+            helpModal.classList.add("hidden");
+        }
+    });
 
     // Number of faces to fetch
     const totalFaces = 20;
@@ -82,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const coverDiv = document.createElement("div");
                 coverDiv.className = "cover";
-                coverDiv.innerHTML = '<div class="cover-icon">🔒</div>';
+                coverDiv.innerHTML = '<div class="cover-icon">🙈</div>';
 
                 card.appendChild(img);
                 card.appendChild(nameDiv);

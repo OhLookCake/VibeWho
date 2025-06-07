@@ -7,7 +7,20 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <h1>Vibe Who</h1>
+        <div class="header">
+            <h1>Vibe Who</h1>
+            <button id="helpBtn" class="help-btn">?</button>
+        </div>
+        <div id="helpModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>How To Play</h2>
+                <p> This is a cooperative game for two players (or teams). Player 1 secretly chooses one of the faces and Player 2 has to guess who it is. Player 2 should ask yes/no questions about the person Player 1 chose, but the questions must be based on vibes alone! </p>
+                <p> For example, "Has your person ever been to a rave?", or "Is your person a virgin?". The more creative the questions, the more fun you'll have :)</p>
+                <p> Any faces the Player 2 eliminates based on the answers can be 'closed' by clicking on them. </p>
+                <p> The aim is to guess the person Player 1 chose in as few questions as possible, but really, the aim is to laugh at stereotypes and AI-generated faces.</p>
+            </div>
+        </div>
         <div id="loading" class="loading">Loading faces and names...</div>
         <div id="grid" class="grid hidden"></div>
         <button id="refresh" class="refresh-btn hidden">New Faces</button>
