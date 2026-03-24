@@ -35,7 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // API: 100k Faces - AI-generated faces
                 const randomId = Math.floor(Math.random() * 99999) + 1;
-                let faceUrl = `https://100k-faces.glitch.me/random-image?${cacheBuster}`;
+                //let faceUrl = `https://100k-faces.glitch.me/random-image?${cacheBuster}`;
+                let faceUrl = `https://100k-faces.vercel.app/api/random-image?${cacheBuster}`;
+                
                 faces.push(faceUrl);
             }
         } catch (error) {
