@@ -1,8 +1,5 @@
 # VibeWho
-This is a cooperative game for two players (or teams). Player 1 secretly chooses one of the faces and Player 2 has to guess who it is. Player 2 should ask yes/no questions about the person Player 1 chose, but the questions must be based on vibes alone!
-
-For example, "Has your person ever been to a rave?", or "Does your person have their own podcast?". The more creative the questions, the more fun you'll have :)
-
-Any faces the Player 2 eliminates based on the answers can be 'closed' by clicking on them.
-
+A game for two players. Player 1 secretly picks a face. Player 2 asks yes/no questions to figure out who it is. But unlike the popular kids' game, questions must be based on what vibe each person gives off.
+Think: "Has your person ever been to a rave?" or "Does your person host their own podcast?" or "Does your person send voice notes?"
+Click any face to close it off as you eliminate people. Fewest questions wins, but honestly, the real goal is laughing at stereotypes and AI-generated faces.
 The aim is to guess the person Player 1 chose in as few questions as possible, but really, the aim is to laugh at stereotypes and AI-generated faces.
