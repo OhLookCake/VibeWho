@@ -98,7 +98,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.help-btn {
+.header-btn {
     position: absolute;
     right: 0;
     width: 30px;
@@ -115,8 +115,29 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.help-btn:hover {
+.header-btn:hover {
     background-color: #2980b9;
+}
+
+#darkModeBtn {
+    right: 40px;
+}
+
+.header-btn .icon {
+    width: 16px;
+    height: 16px;
+}
+
+#darkModeBtn .icon-moon {
+    display: none;
+}
+
+body.dark-mode #darkModeBtn .icon-sun {
+    display: none;
+}
+
+body.dark-mode #darkModeBtn .icon-moon {
+    display: block;
 }
 
 .modal {
@@ -156,4 +177,40 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+body.dark-mode h1 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .face-card {
+    background-color: #16213e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .face-name {
+    color: #e0e0e0;
+}
+
+body.dark-mode .modal-content {
+    background-color: #16213e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .close-btn {
+    color: #aaa;
+}
+
+body.dark-mode .close-btn:hover {
+    color: #e0e0e0;
+}
+
+body.dark-mode .loading {
+    color: #e0e0e0;
 }

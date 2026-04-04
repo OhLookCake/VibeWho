@@ -5,6 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const helpBtn = document.getElementById("helpBtn");
     const helpModal = document.getElementById("helpModal");
     const closeBtn = document.querySelector(".close-btn");
+    const darkModeBtn = document.getElementById("darkModeBtn");
+
+    // Dark mode toggle
+    if (localStorage.getItem("darkMode") === "true") {
+        document.body.classList.add("dark-mode");
+    }
+
+    darkModeBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+    });
 
     // Modal functionality
     helpBtn.addEventListener("click", () => {
