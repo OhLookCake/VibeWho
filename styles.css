@@ -128,16 +128,16 @@ h1 {
     height: 16px;
 }
 
-#darkModeBtn .icon-moon {
+#darkModeBtn .icon-sun {
     display: none;
 }
 
 body.dark-mode #darkModeBtn .icon-sun {
-    display: none;
+    display: block;
 }
 
 body.dark-mode #darkModeBtn .icon-moon {
-    display: block;
+    display: none;
 }
 
 .modal {
